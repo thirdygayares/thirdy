@@ -9,8 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#216B15",
+        secondary: "#FE5621",
+        warning: "#FFC107",
+        danger: "#DC3545",
+        info: "#2F3A49",
+        light: "#0DCAF0",
+        dark: "#212529",
+      },
+      fontFamily: {
+        sans: ["Metropolis", "Arial", "sans-serif"],
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px"
       },
     },
   },

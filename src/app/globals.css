@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis.regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +23,184 @@
 
 body {
   color: var(--foreground);
+  font-size: 16px;
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  line-height: 1.2;
+  font-weight: 500;
+
+  &-xl {
+    font-size: 4rem;
+
+    @media (min-width: 481px) {
+      font-size: 7.5rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 10rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 12.5rem;
+    }
+  }
+
+  &-lg {
+    font-size: 3rem;
+
+    @media (min-width: 481px) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 5rem;
+    }
+  }
+
+  &-md {
+    font-size: 2.25rem;
+
+    @media (min-width: 481px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 4rem;
+    }
+
+  }
+
+  &-sm {
+    font-size: 2rem;
+
+    @media (min-width: 481px) {
+      font-size: 2.25rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.title {
+  line-height: 1.5;
+  font-weight: 500;
+
+  &-xl {
+    font-size: 1.75rem;
+
+    @media (min-width: 481px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &-lg {
+    font-size: 1.25rem;
+
+    @media (min-width: 481px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 2rem;
+    }
+  }
+
+  &-md {
+    font-size: 1.125rem;
+
+    @media (min-width: 481px) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &-sm {
+    font-size: 1rem;
+
+    @media (min-width: 481px) {
+      font-size: 1.125rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 1.3125rem;
+    }
+  }
+}
+
+.body {
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1rem;
+
+  &-lg {
+    font-size: 0.875rem;
+
+    @media (min-width: 481px) {
+      font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-md {
+    font-size: 0.875rem;
+
+    @media (min-width: 481px) {
+      font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 1rem;
+    }
+  }
+
+  &-sm {
+    font-size: 0.75rem;
+
+    @media (min-width: 481px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &-xsm {
+    font-size: 0.75rem;
+  }
 }
