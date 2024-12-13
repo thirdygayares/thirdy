@@ -1,14 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Metropolis";
   src: url("/fonts/metropolis.regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
