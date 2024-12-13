@@ -22,9 +22,9 @@
 }
 
 body {
-  color: var(--foreground);
+  @apply bg-primary text-white;
   font-size: 16px;
-  background: var(--background);
+
 }
 
 
