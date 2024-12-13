@@ -1,21 +1,30 @@
-
-
 const Header = () => {
-    return(
-        <header className="bg-primary text-white">
-            <div className="container m-auto flex gap-4  flex-col p-6 md:flex-row  md:justify-between md:items-center ">
+    return (
+        <header className="sticky top-0 bg-primary/20 backdrop-blur-xl text-white z-40">
+            <div className="container m-auto flex gap-4 p-6  justify-between items-center">
                 <h1 className="title-lg font-bold">THIRDY</h1>
-                <nav>
+                <nav >
                     <ul className="flex gap-4 body-lg cursor-pointer">
-                        <li className="hover:text-secondary hover:font-extrabold">Who Am I</li>
-                        <li className="hover:text-secondary hover:font-extrabold">Skills</li>
-                        <li className="hover:text-secondary hover:font-extrabold">Project</li>
+                        <li>
+                            <a href="#who-am-i" className="hover:text-secondary hover:font-extrabold">
+                                Who Am I
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills" className="hover:text-secondary hover:font-extrabold">
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#project" className="hover:text-secondary hover:font-extrabold">
+                                Project
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
     );
-}
+};
 
 export default Header;
