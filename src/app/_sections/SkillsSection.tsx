@@ -15,7 +15,7 @@ const SkillsSection: React.FC = () => {
     });
 
     return (
-        <section className="container m-auto px-8">
+        <section className="container m-auto px-8 xl:px-0 flex flex-col gap-3">
             <h2 className="text-center text-xl font-bold mb-4">Skills</h2>
             <div className="grid grid-cols-3 md:flex md:flex-wrap justify-center  gap-4">
                 {skillsList}
