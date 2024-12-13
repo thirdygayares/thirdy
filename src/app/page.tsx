@@ -1,12 +1,12 @@
 
-import Example from '@/components/Example';
 import Header from "@/components/Header";
+import HeroSection from "@/app/_sections/HeroSection";
 
 export default function Home() {
   return (
       <div>
           <Header/>
-          <Example title="Hello, TypeScript and Vite with Next.js!" />
+          <HeroSection/>
       </div>
   );
 }
