@@ -1,5 +1,5 @@
 # Clone this
-git clone 
+git clone https://github.com/thirdygayares/thirdy.git
 
 # How to run
 npm install
