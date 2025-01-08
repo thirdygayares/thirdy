@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Thirdy Gayares - Software Engineer in the Philippines",
+    title: {
+        default: "Thirdy Gayares - Software Engineer in the Philippines",
+        template: `%s | Thirdy Gayares`,
+    },
     description: "Hi, my real name is Jose Gayares III. I'm a Filipino Software Engineer specializing in backend systems, mobile app development, and SEO experimentation. Explore my projects including Nexus App, HWORK App, HTeams, and more.",
     keywords: [
         "Thirdy Gayares",
@@ -44,6 +47,7 @@ export const metadata: Metadata = {
         "Next Js Developer",
         "Part Time Instructor",
     ],
+    metadataBase: new URL("https://thirdygayares.com"),
     publisher: 'ThirdyGayares',
     icons: ["https://thirdygayares.com/image/thirdy.png"],
     authors: [
