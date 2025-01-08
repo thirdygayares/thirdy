@@ -1,8 +1,8 @@
 
 import Header from "@/components/Header";
-import HeroSection from "@/app/_sections/HeroSection";
-import SkillsSection from "@/app/_sections/SkillsSection";
-import ProjectsSection from "@/app/_sections/ProjectsSection";
+import HeroSection from "@/app/_homesections/HeroSection";
+import SkillsSection from "@/app/_homesections/SkillsSection";
+import ProjectsSection from "@/app/_homesections/ProjectsSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
