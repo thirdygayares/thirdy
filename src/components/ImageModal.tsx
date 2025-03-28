@@ -3,7 +3,7 @@ import React from "react";
 const ImageModal = ({ image, onClose }: { image: string; onClose: () => void }) => {
     return (
         // bg-opacity-75
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-xl flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-xl flex items-center justify-center z-50" onClick={onClose}>
             <div className="relative">
                 {/* Close Button */}
                 <button
