@@ -38,15 +38,17 @@ export default function Home() {
                 />
             </Head>
 
-            <Header />
-            <main>
-                <article className="flex flex-col gap-12 lg:gap-20">
-                    <HeroSection />
-                    <SkillsSection />
-                    <ProjectsSection />
-                    <Footer />
-                </article>
-            </main>
+            <div className="text-white bg-primary ">
+                <Header />
+                <main>
+                    <article className="flex flex-col gap-12 lg:gap-20">
+                        <HeroSection />
+                        <SkillsSection />
+                        <ProjectsSection />
+                        <Footer />
+                    </article>
+                </main>
+            </div>
         </>
     );
 }
