@@ -2,7 +2,13 @@ import React from "react";
 import Icon from "@/components/Icon";
 import {Project, Source} from "@/types/project";
 
-const ProjectCard = ({ project, onImageClick }: { project: Project; onImageClick: (image: string) => void }) => {
+interface ProjectCardProps {
+    project: Project;
+    onImageClick: (image: string, altName:string) => void;
+}
+
+const ProjectCard = (projectCardProps:ProjectCardProps) => {
+    const { project, onImageClick } = projectCardProps;
     const { name, description, image, sources } = project;
 
     return (
@@ -11,7 +17,7 @@ const ProjectCard = ({ project, onImageClick }: { project: Project; onImageClick
             <img
                 src={`/image/project-cover/${image}`}
                 alt={name}
-                onClick={() => onImageClick(`/image/project-cover/${image}`)}
+                onClick={() => onImageClick(`/image/project-cover/${image}`, name)}
                 className="aspect-w-16 self-center aspect-h-9 rounded-lg shadow-2xl object-contain h-48 w-96 p-2 cursor-pointer hover:opacity-90"
             />
             <div className="w-0.5 bg-primary/20 hidden xl:block h-48"></div>

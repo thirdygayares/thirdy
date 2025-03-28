@@ -1,6 +1,13 @@
 import React from "react";
 
-const ImageModal = ({ image, onClose }: { image: string; onClose: () => void }) => {
+interface ImageModalProps {
+    image: string;
+    onClose: () => void;
+    altName?: string;
+}
+
+const ImageModal = (imageModalProps: ImageModalProps) => {
+    const { image, onClose, altName } = imageModalProps;
     return (
         // bg-opacity-75
         <div className="fixed inset-0 bg-black/60 backdrop-blur-xl flex items-center justify-center z-50" onClick={onClose}>
@@ -15,7 +22,7 @@ const ImageModal = ({ image, onClose }: { image: string; onClose: () => void }) 
                 {/* Zoomed Image */}
                 <img
                     src={image}
-                    alt="Zoomed"
+                    alt={altName || "Image"}
                     className=" max-h-screen object-contain rounded-lg shadow-2xl"
                 />
             </div>
