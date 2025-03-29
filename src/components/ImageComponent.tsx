@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Image from "next/image";
 import ImageModal from "@/components/ImageModal";
+import clsx from "clsx";
 
 interface ImageComponentProps {
     image: string;
@@ -34,7 +35,7 @@ const ImageComponent = (imageComponentProps: ImageComponentProps) => {
                         alt={altName || "Image"}
                         width={height}
                         height={width}
-                        className={imageClassName}
+                        className={clsx("cursor-zoom-in", imageClassName)}
                         onClick={handleZoom}
             />
 
