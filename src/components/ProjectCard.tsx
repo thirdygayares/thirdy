@@ -1,25 +1,28 @@
 import React from "react";
 import Icon from "@/components/Icon";
 import {Project, Source} from "@/types/project";
+import ImageComponent from "@/components/ImageComponent";
 
 interface ProjectCardProps {
     project: Project;
-    onImageClick: (image: string, altName:string) => void;
 }
 
 const ProjectCard = (projectCardProps:ProjectCardProps) => {
-    const { project, onImageClick } = projectCardProps;
+    const { project } = projectCardProps;
     const { name, description, image, sources } = project;
 
     return (
         <div className="flex flex-col xl:flex-row gap-4 bg-info shadow-2xl rounded-xl p-6">
             {/* Image with Click Event */}
-            <img
-                src={`/image/project-cover/${image}`}
-                alt={name}
-                onClick={() => onImageClick(`/image/project-cover/${image}`, name)}
-                className="aspect-w-16 self-center aspect-h-9 rounded-lg shadow-2xl object-contain h-48 w-96 p-2 cursor-pointer hover:opacity-90"
-            />
+
+            <div className="w-full lg:min-w-80 flex items-center justify-center">
+                <ImageComponent
+                    image={`/image/project-cover/${image}`}
+                    altName={name}
+                    className="aspect-w-16 self-center aspect-h-9 rounded-lg shadow-2xl object-cover h-48 w-96 p-2 cursor-pointer hover:opacity-90 m-auto"
+                />
+            </div>
+
             <div className="w-0.5 bg-primary/20 hidden xl:block h-48"></div>
             <section className="flex flex-col gap-4 self-center">
                 <div>

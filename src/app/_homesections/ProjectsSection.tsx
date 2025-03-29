@@ -1,30 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { projects } from "@/data/project";
 import ProjectCard from "@/components/ProjectCard";
-import ImageModal from "@/components/ImageModal";
 
 const ProjectsSection = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalImage, setModalImage] = useState("");
-    const [modalAlt, setModalAlt] = useState("");
 
-    const openModal = (image: string, alt:string) => {
-        setModalImage(image);
-        setModalAlt(alt);
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setModalImage("");
-    };
 
     const projectList = projects.map((project) => {
         const {name} = project;
         return(
-            <ProjectCard key={name} project={project} onImageClick={openModal} />
+            <ProjectCard key={name} project={project}  />
         )
     })
 
@@ -34,10 +20,6 @@ const ProjectsSection = () => {
             <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5">
                 {projectList}
             </div>
-
-            {isModalOpen &&
-                <ImageModal image={modalImage} onClose={closeModal} altName={modalAlt} />
-            }
         </section>
     );
 };
