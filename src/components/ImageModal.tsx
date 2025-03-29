@@ -1,13 +1,16 @@
 import React from "react";
+import Image from "next/image";
 
 interface ImageModalProps {
     image: string;
     onClose: () => void;
     altName?: string;
+    height?: number;
+    width?:number;
 }
 
 const ImageModal = (imageModalProps: ImageModalProps) => {
-    const { image, onClose, altName } = imageModalProps;
+    const { image, onClose, altName, height=720, width=1080 } = imageModalProps;
     return (
         // bg-opacity-75
         <div className="fixed inset-0 bg-black/60 backdrop-blur-xl flex items-center justify-center z-50" onClick={onClose}>
@@ -20,9 +23,11 @@ const ImageModal = (imageModalProps: ImageModalProps) => {
                     ✕ Close
                 </button>
                 {/* Zoomed Image */}
-                <img
+                <Image
                     src={image}
                     alt={altName || "Image"}
+                    width={height}
+                    height={width}
                     className=" max-h-screen object-contain rounded-lg shadow-2xl"
                 />
             </div>
