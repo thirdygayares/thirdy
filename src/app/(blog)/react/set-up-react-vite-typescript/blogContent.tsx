@@ -60,7 +60,7 @@ const blogContent = () => {
                     <h3 className="text-xl font-bold">4: Run your code</h3>
                     <p>Run:</p>
                     <CodeComponent code={`npm run dev`} language={"bash"}/>
-                    <ImageComponent image={imagePath.BLOG(`${myImagePath}/7-run-your-code.png`)} altName={"Rubn your code "} className=" border-2 border-gray-200 rounded-2xl"/>
+                    <ImageComponent image={imagePath.BLOG(`${myImagePath}/7-run-your-code.png`)} altName={"Run your code "} className=" border-2 border-gray-200 rounded-2xl"/>
                     <h3>Your <strong>React + Vite + TypeScript</strong> project is now ready!</h3>
                     <ImageComponent image={imagePath.BLOG(`${myImagePath}/8-react-run-output.png`)} altName={"React Setup Output"} className="my-5 border-2 border-gray-200 rounded-2xl"/>
                 </div>
