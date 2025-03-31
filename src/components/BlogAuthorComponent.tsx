@@ -1,8 +1,6 @@
 import {blogAuthors} from "@/data/blogAuthors";
-import Image from "next/image";
 import ImageComponent from "@/components/ImageComponent";
 import {imagePath} from "@/types/imagePath";
-import Icon from "@/components/Icon";
 
 interface BlogAuthorProps {
     authorID?: string;
@@ -31,9 +29,6 @@ const BlogAuthorComponent = (blogAuthorProps:BlogAuthorProps) => {
                     <p className="text-md font-bold text-zinc-900">{authorData.name}</p>
                     <p className="text-xs font-medium text-blue-950">Author</p>
                 </div>
-
-
-
             </div>
         </div>
     )

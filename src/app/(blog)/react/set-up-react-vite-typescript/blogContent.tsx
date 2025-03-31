@@ -8,7 +8,7 @@ const blogContent = () => {
     const myImagePath = 'react/1-set-up-react-vite-typescript'
 
     return(
-        <article className="container m-auto flex flex-col p-4 md:px-0 gap-4">
+        <article className="flex flex-col p-4 md:px-0 gap-4">
 
         <h1 className="text-lg md:text-2xl font-extrabold py-2">How to Install and Set Up React with Vite and TypeScript (Step by Step)</h1>
             <BlogAuthorComponent/>

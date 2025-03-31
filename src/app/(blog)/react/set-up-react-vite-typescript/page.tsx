@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import BlogContent from "@/app/(blog)/react/set-up-react-vite-typescript/blogContent";
+import BlogSuggestionComponent from "@/components/BlogSuggestionComponent";
 
 export default function SetUpReactViteTypeScript() {
     const structuredData = {
@@ -49,8 +50,9 @@ export default function SetUpReactViteTypeScript() {
             </Head>
 
             <div className="bg-white">
-                <main>
+                <main className="container m-auto">
                     <BlogContent/>
+                    <BlogSuggestionComponent link="https://github.com/thirdygayares/thirdygayares.com/issues/new?assignees=&labels=blog&template=blog-suggestion.md&title="/>
                 </main>
             </div>
         </>
