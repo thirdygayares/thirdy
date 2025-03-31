@@ -52,7 +52,7 @@ export default function SetUpReactViteTypeScript() {
             <div className="bg-white">
                 <main className="container m-auto">
                     <BlogContent/>
-                    <BlogSuggestionComponent link="https://github.com/thirdygayares/thirdygayares.com/issues/new?assignees=&labels=blog&template=blog-suggestion.md&title="/>
+                    <BlogSuggestionComponent link="https://github.com/thirdygayares/thirdy/pull/12"/>
                 </main>
             </div>
         </>
