@@ -35,7 +35,7 @@ export default function SetUpReactViteTypeScript() {
         },
         "datePublished": "2025-03-31T08:00:00+08:00",
         "dateModified": "2025-03-31T08:00:00+08:00",
-        "image": "https://thirdygayares.com/blog/react/1-set-up-react-vite-typescript/thumbnail.png"
+        "image": "https://thirdygayares.com/image/blog/react/1-set-up-react-vite-typescript/thumbnail.png"
     };
 
     return (

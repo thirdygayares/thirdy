@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         siteName: "Thirdy Gayares",
         images: [
             {
-                url: "https://thirdygayares.com/blog/react/1-set-up-react-vite-typescript/thumbnail.png",
+                url: "https://thirdygayares.com/image/blog/react/1-set-up-react-vite-typescript/thumbnail.png",
                 width: 1200,
                 height: 630,
                 alt: "React Vite TypeScript Setup Guide",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         site: "@thirdygayares",
         title: "How to Set Up React with Vite and TypeScript",
         description: "Step-by-step tutorial on setting up a React project with Vite and TypeScript. Ideal for beginners and developers who want a fast setup.",
-        images: ["https://thirdygayares.com/blog/react/1-set-up-react-vite-typescript/thumbnail.png"],
+        images: ["https://thirdygayares.com/image/blog/react/1-set-up-react-vite-typescript/thumbnail.png"],
     },
     robots: {
         index: true,
