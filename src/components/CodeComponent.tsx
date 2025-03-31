@@ -21,7 +21,7 @@ const CodeComponent = (codeComponentProps: CodeComponentProps) => {
 
 
     return (
-        <div className="relative bg-gray-800  text-white p-4 rounded-lg overflow-x-auto w-full">
+        <div className="relative bg-gray-800  text-white px-2  pt-5 pb-1 rounded-lg overflow-x-auto w-full">
             <button
                 onClick={copyToClipboard}
                 className="absolute top-2 right-2 bg-gray-700 text-white p-2 rounded text-sm hover:bg-gray-600 transition"

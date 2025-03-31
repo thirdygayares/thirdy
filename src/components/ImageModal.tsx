@@ -18,7 +18,7 @@ const ImageModal = (imageModalProps: ImageModalProps) => {
                 {/* Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 bg-white/60 backdrop-blur-sm rounded-full py-2 px-4  text-black hover:bg-gray-200"
+                    className="absolute -top-12 right-2 bg-white/60 backdrop-blur-sm rounded-full py-2 px-4  text-black hover:bg-gray-200"
                 >
                     ✕ Close
                 </button>
