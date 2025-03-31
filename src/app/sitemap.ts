@@ -1,10 +1,16 @@
-export default async function sitemap(){
-    return[
-        {
-            url: "https://thirdygayares.com",
-            lastModified: new Date(),
-            priority: 1,
-            changeFrequency: "daily",
-        }
-    ]
+export default async function sitemap() {
+    const baseUrl = "https://thirdygayares.com";
+    const currentDate = new Date();
+
+    const routes = [
+        {path: "", priority: 1, changeFrequency: "daily"},
+        {path: "/react/set-up-react-vite-typescript", priority: 0.8, changeFrequency: "weekly"},
+    ];
+
+    return routes.map((route) => ({
+        url: `${baseUrl}${route.path}`,
+        lastModified: currentDate,
+        priority: route.priority,
+        changeFrequency: route.changeFrequency,
+    }));
 }
