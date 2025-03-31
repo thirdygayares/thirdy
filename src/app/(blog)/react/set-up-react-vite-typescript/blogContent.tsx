@@ -2,6 +2,7 @@ import {ExclamationTriangleIcon} from "@heroicons/react/24/solid";
 import CodeComponent from "@/components/CodeComponent";
 import ImageComponent from "@/components/ImageComponent";
 import {imagePath} from "@/types/imagePath";
+import BlogAuthorComponent from "@/components/BlogAuthorComponent";
 
 const blogContent = () => {
     const myImagePath = 'react/1-set-up-react-vite-typescript'
@@ -10,7 +11,7 @@ const blogContent = () => {
         <article className="container m-auto flex flex-col p-4 md:px-0 gap-4">
 
         <h1 className="text-lg md:text-2xl font-extrabold py-2">How to Install and Set Up React with Vite and TypeScript (Step by Step)</h1>
-
+            <BlogAuthorComponent/>
             <div>
                 In this article, I will show you how to set up a <strong>React</strong> project using <strong>Vite</strong>  and <strong>TypeScript</strong>  step by step. This guide is perfect for beginners who want to start using React with TypeScript in a fast and efficient way. By the end, you will have a working project that is ready for development.
             </div>
@@ -52,7 +53,6 @@ const blogContent = () => {
                 <div className="flex flex-col gap-4">
                     <h3 className="text-xl font-bold">3. View Source Code on your favorite IDE </h3>
                     <ImageComponent image={imagePath.BLOG(`${myImagePath}/6-view-source-code.png`)} altName={"View Source Code on your favorite IDE "} className=" border-2 border-gray-200 rounded-2xl"/>
-
                 </div>
 
                 {/*4*/}
@@ -63,7 +63,6 @@ const blogContent = () => {
                     <ImageComponent image={imagePath.BLOG(`${myImagePath}/7-run-your-code.png`)} altName={"Rubn your code "} className=" border-2 border-gray-200 rounded-2xl"/>
                     <h3>Your <strong>React + Vite + TypeScript</strong> project is now ready!</h3>
                     <ImageComponent image={imagePath.BLOG(`${myImagePath}/8-react-run-output.png`)} altName={"React Setup Output"} className="my-5 border-2 border-gray-200 rounded-2xl"/>
-
                 </div>
             </div>
 
