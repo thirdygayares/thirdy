@@ -1,5 +1,7 @@
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+"use client";
+
+import {Prism as SyntaxHighlighter} from "react-syntax-highlighter";
+import {dracula} from "react-syntax-highlighter/dist/esm/styles/prism";
 import {useState} from "react";
 import {ClipboardDocumentCheckIcon, ClipboardIcon} from "@heroicons/react/24/solid";
 
