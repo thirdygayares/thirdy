@@ -1,5 +1,3 @@
-"use client";
-
 import Head from "next/head";
 import BlogContent from "@/app/(blog)/react/set-up-react-vite-typescript/blogContent";
 import BlogSuggestionComponent from "@/components/BlogSuggestionComponent";

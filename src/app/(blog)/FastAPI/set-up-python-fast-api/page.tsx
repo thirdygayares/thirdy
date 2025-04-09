@@ -1,5 +1,3 @@
-"use client";
-
 import Head from "next/head";
 import BlogSuggestionComponent from "@/components/BlogSuggestionComponent";
 import BlogContent from "@/app/(blog)/FastAPI/set-up-python-fast-api/blogContent";
