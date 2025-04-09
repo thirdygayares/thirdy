@@ -5,6 +5,8 @@ export default async function sitemap() {
     const routes = [
         {path: "", priority: 1, changeFrequency: "daily"},
         {path: "/react/set-up-react-vite-typescript", priority: 0.8, changeFrequency: "weekly"},
+        {path: "/FastAPI/set-up-python-fast-api", priority: 0.8, changeFrequency: "weekly"},
+
     ];
 
     return routes.map((route) => ({
