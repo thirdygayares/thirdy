@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         siteName: "Thirdy Gayares",
         images: [
             {
-                url: "https://thirdygayares.com/FastAPI/set-up-python-fast-api",
+                url: "https://thirdygayares.com/image/blog/fastAPI/set-up-fastapi/thumbnail.png",
                 width: 1200,
                 height: 630,
                 alt: "FastAPI Setup Guide Thumbnail",
