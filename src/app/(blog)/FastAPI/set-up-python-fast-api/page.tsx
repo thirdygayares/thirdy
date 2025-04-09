@@ -4,7 +4,7 @@ import Head from "next/head";
 import BlogSuggestionComponent from "@/components/BlogSuggestionComponent";
 import BlogContent from "@/app/(blog)/FastAPI/set-up-python-fast-api/blogContent";
 
-export default function SetUpReactViteTypeScript() {
+export default function SetUpFastAPIPage() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",

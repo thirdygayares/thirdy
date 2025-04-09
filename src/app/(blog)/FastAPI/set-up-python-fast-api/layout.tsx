@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     },
 };
 
-export default function SetUpReactViteTypeScriptLayout({
+export default function SetUpFastAPILayout({
                                                            children,
                                                        }: Readonly<{
     children: React.ReactNode;
