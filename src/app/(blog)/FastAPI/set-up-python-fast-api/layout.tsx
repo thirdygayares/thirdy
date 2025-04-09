@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         siteName: "Thirdy Gayares",
         images: [
             {
-                url: "https://thirdygayares.com/image/blog/fastAPI/set-up-fastapi/thumbnail.png",
+                url: "https://thirdygayares.com/image/blog/fastAPI/1-set-up-fastapi/thumbnail.jpg",
                 width: 1200,
                 height: 630,
                 alt: "FastAPI Setup Guide Thumbnail",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         site: "@thirdygayares",
         title: "Set Up Python FastAPI - Step-by-Step Guide",
         description: "Follow this easy FastAPI setup tutorial by Thirdy Gayares and build your first Python API quickly.",
-        images: ["https://thirdygayares.com/image/blog/fastAPI/set-up-fastapi/thumbnail.png"],
+        images: ["https://thirdygayares.com/image/blog/fastAPI/1-set-up-fastapi/thumbnail.jpg"],
     },
     robots: {
         index: true,
