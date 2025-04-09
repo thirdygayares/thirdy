@@ -40,7 +40,7 @@ const ImageComponent = (imageComponentProps: ImageComponentProps) => {
             />
 
             {isModalOpen &&
-                <ImageModal image={image} onClose={closeModal} altName={altName} />
+                <ImageModal image={image} onClose={closeModal} altName={altName} width={width} height={height}/>
             }
         </div>
     );
